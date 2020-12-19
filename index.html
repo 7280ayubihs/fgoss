@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/fgoss.css">
+    <title>FGOサーヴァント検索</title>
+  </head>
+  <body>
+    <header>
+      <p class="site-title">
+        Fate/Grand Order<br>
+        サーヴァントスペック検索
+      </p>
+    </header>
+    <main>
+      <table class="search-spec">
+        <colgroup>
+          <col width=120px>
+          <col width=180px>
+          <col width=180px>
+          <col width=180px>
+          <col width=180px>
+        </colgroup>
+        <tr>
+          <th rowspan="4" class="th-base-status">クラス</th>
+          <td><input type="checkbox" id="class_saber"><label for="class_saber">セイバー</label></td>
+          <td><input type="checkbox" id="class_archer"><label for="class_archer">アーチャー</label></td>
+          <td><input type="checkbox" id="class_lancer"><label for="class_lancer">ランサー</label></td>
+          <td><input type="checkbox" id="class_rider"><label for="class_rider">ライダー</label></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" id="class_caster"><label for="class_caster">キャスター</label></td>
+          <td><input type="checkbox" id="class_assassin"><label for="class_assassin">アサシン</label></td>
+          <td colspan="2"><input type="checkbox" id="class_berserker"><label for="class_berserker">バーサーカー</label></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" id="class_shielder"><label for="class_shielder">シールダー</label></td>
+          <td><input type="checkbox" id="class_ruler"><label for="class_ruler">ルーラー</label></td>
+          <td><input type="checkbox" id="class_avenger"><label for="class_avenger">アヴェンジャー</label></td>
+          <td><input type="checkbox" id="class_alter_ego"><label for="class_alter_ego">アルターエゴ</label></td>
+        </tr>
+        <tr class="tr-border-buttom">
+          <td><input type="checkbox" id="class_moon_cancer"><label for="class_moon_cancer">ムーンキャンサー</label></td>
+          <td colspan="3"><input type="checkbox" id="class_foreigner"><label for="class_foreigner">フォーリナー</label></td>
+        </tr>
+        <tr>
+          <th rowspan="2" class="th-base-status">レアリティ</th>
+          <td><input type="checkbox" id="rarity5"><label for="rarity5">★５（ＳＳＲ）</label></td>
+          <td><input type="checkbox" id="rarity4"><label for="rarity4">★４（ＳＲ）</label></td>
+          <td><input type="checkbox" id="rarity3"><label for="rarity3">★３（Ｒ）</label></td>
+          <td><input type="checkbox" id="rarity2"><label for="rarity2">★２（ＵＣ）</label></td>
+        </tr>
+        <tr class="tr-border-buttom">
+          <td><input type="checkbox" id="rarity1"><label for="rarity1">★１（Ｃ）</label></td>
+          <td colspan="3"><input type="checkbox" id="rarity0"><label for="rarity0">★０</label></td>
+        </tr>
+        <tr class="tr-border-buttom">
+          <th class="th-np-choices">宝具タイプ</th>
+          <td><input type="checkbox" id="np_type_quick"><label for="np_type_quick">Quick宝具</label></td>
+          <td><input type="checkbox" id="np_type_arts"><label for="np_type_arts">Arts宝具</label></td>
+          <td colspan="2"><input type="checkbox" id="np_type_buster"><label for="np_type_buster">Buster宝具</label></td>
+        </tr>
+        <tr class="tr-border-buttom">
+          <th class="th-np-choices">宝具種別</th>
+          <td><input type="checkbox" id="np_effect_whole_attack"><label for="np_effect_whole_attack">全体攻撃宝具</label></td>
+          <td><input type="checkbox" id="np_effect_single_attack"><label for="np_effect_single_attack">単体攻撃宝具</label></td>
+          <td colspan="2"><input type="checkbox" id="np_effect_support"><label for="np_effect_support">補助宝具</label></td>
+        </tr>
+        <tr hidden>
+          <th rowspan="5" class="th-np-choices">宝具効果<br>（攻撃系）</th>
+          <td><input type="checkbox" id="np_atk_up"><label for="np_atk_up">攻撃力アップ</label></td>
+          <td><input type="checkbox" id="np_damage_plus"><label for="np_damage_plus">与ダメージプラス</label></td>
+          <td><input type="checkbox" id="np_quick_up"><label for="np_quick_up">Quick性能アップ</label></td>
+          <td><input type="checkbox" id="np_arts_up"><label for="np_arts_up">Arts性能アップ</label></td>
+        </tr>
+        <tr hidden>
+          <td><input type="checkbox" id="np_buster_up"><label for="np_buster_up">Buster性能アップ</label></td>
+          <td><input type="checkbox" id="np_no_power_up"><label for="np_no_power_up">宝具威力アップ</label></td>
+          <td><input type="checkbox" id="np_critical_power_up"><label for="np_critical_power_up">クリティカル威力アップ</label></td>
+          <td><input type="checkbox" id="np_star_generation_rate_up"><label for="np_star_generation_rate_up">スター発生率アップ</label></td>
+        </tr>
+        <tr hidden>
+          <td><input type="checkbox" id="np_star_concentration_up"><label for="np_star_concentration_up">スター集中度アップ</label></td>
+          <td><input type="checkbox" id="np_star_get"><label for="np_star_get">スター獲得</label></td>
+          <td><input type="checkbox" id="np_star_every_turn_get"><label for="np_star_every_turn_get">毎ターンスター獲得</label></td>
+          <td><input type="checkbox" id="np_np_get"><label for="np_np_get">NP獲得</label></td>
+        </tr>
+        <tr hidden>
+          <td><input type="checkbox" id="np_np_every_turn_get"><label for="np_np_every_turn_get">毎ターンNP獲得</label></td>
+          <td><input type="checkbox" id="np_np_generation_rate_up"><label for="np_np_generation_rate_up">NP獲得量アップ</label></td>
+          <td><input type="checkbox" id="np_hitting_target"><label for="np_hitting_target">必中</label></td>
+          <td><input type="checkbox" id="np_invincible_penetration"><label for="np_invincible_penetration">無敵貫通</label></td>
+        </tr>
+        <tr hidden class="tr-border-buttom">
+          <td colspan="4"><input type="checkbox" id="np_ignore_def"><label for="np_ignore_def">防御無視</label></td>
+        </tr>
+        <tr hidden>
+          <th rowspan="3" class="th-np-choices">宝具効果<br>（防御系）</th>
+          <td><input type="checkbox" id="np_def_up"><label for="np_def_up">防御力アップ</label></td>
+          <td><input type="checkbox" id="np_damage_cut"><label for="np_damage_cut">被ダメージカット</label></td>
+          <td><input type="checkbox" id="np_hp_heal"><label for="np_hp_heal">HP回復</label></td>
+          <td><input type="checkbox" id="np_hp_every_turn_heal"><label for="np_hp_every_turn_heal">毎ターンHP回復</label></td>
+        </tr>
+        <tr hidden>
+          <td><input type="checkbox" id="np_hp_healing_rate_up"><label for="np_hp_healing_rate_up">HP回復量アップ</label></td>
+          <td><input type="checkbox" id="np_avoidance"><label for="np_avoidance">回避</label></td>
+          <td><input type="checkbox" id="np_invincible"><label for="np_invincible">無敵</label></td>
+          <td><input type="checkbox" id="np_guts"><label for="np_guts">ガッツ</label></td>
+        </tr>
+        <tr hidden class="tr-border-buttom">
+          <td colspan="4"><input type="checkbox" id="np_target_concentration"><label for="np_target_concentration">ターゲット集中</label></td>
+        </tr>
+        <tr hidden>
+          <th rowspan="5" class="th-skill-choices">スキル効果<br>（攻撃系）</th>
+          <td><input type="checkbox" id="skill_atk_up"><label for="skill_atk_up">攻撃力アップ</label></td>
+          <td><input type="checkbox" id="skill_damage_plus"><label for="skill_damage_plus">与ダメージプラス</label></td>
+          <td><input type="checkbox" id="skill_quick_up"><label for="skill_quick_up">Quick性能アップ</label></td>
+          <td><input type="checkbox" id="skill_arts_up"><label for="skill_arts_up">Arts性能アップ</label></td>
+        </tr>
+        <tr hidden>
+          <td><input type="checkbox" id="skill_buster_up"><label for="skill_buster_up">Buster性能アップ</label></td>
+          <td><input type="checkbox" id="skill_no_power_up"><label for="skill_no_power_up">宝具威力アップ</label></td>
+          <td><input type="checkbox" id="skill_critical_power_up"><label for="skill_critical_power_up">クリティカル威力アップ</label></td>
+          <td><input type="checkbox" id="skill_star_generation_rate_up"><label for="skill_star_generation_rate_up">スター発生率アップ</label></td>
+        </tr>
+        <tr hidden>
+          <td><input type="checkbox" id="skill_star_concentration_up"><label for="skill_star_concentration_up">スター集中度アップ</label></td>
+          <td><input type="checkbox" id="skill_star_get"><label for="skill_star_get">スター獲得</label></td>
+          <td><input type="checkbox" id="skill_star_every_turn_get"><label for="skill_star_every_turn_get">毎ターンスター獲得</label></td>
+          <td><input type="checkbox" id="skill_np_get"><label for="skill_np_get">NP獲得</label></td>
+        </tr>
+        <tr hidden>
+          <td><input type="checkbox" id="skill_np_every_turn_get"><label for="skill_np_every_turn_get">毎ターンNP獲得</label></td>
+          <td><input type="checkbox" id="skill_np_generation_rate_up"><label for="skill_np_generation_rate_up">NP獲得量アップ</label></td>
+          <td><input type="checkbox" id="skill_hitting_target"><label for="skill_hitting_target">必中</label></td>
+          <td><input type="checkbox" id="skill_invincible_penetration"><label for="skill_invincible_penetration">無敵貫通</label></td>
+        </tr>
+        <tr hidden class="tr-border-buttom">
+          <td colspan="4"><input type="checkbox" id="skill_ignore_def"><label for="skill_ignore_def">防御無視</label></td>
+        </tr>
+        <tr hidden>
+          <th rowspan="3" class="th-skill-choices">スキル効果<br>（防御系）</th>
+          <td><input type="checkbox" id="skill_def_up"><label for="skill_def_up">防御力アップ</label></td>
+          <td><input type="checkbox" id="skill_damage_cut"><label for="skill_damage_cut">被ダメージカット</label></td>
+          <td><input type="checkbox" id="skill_hp_heal"><label for="skill_hp_heal">HP回復</label></td>
+          <td><input type="checkbox" id="skill_hp_every_turn_heal"><label for="skill_hp_every_turn_heal">毎ターンHP回復</label></td>
+        </tr>
+        <tr hidden>
+          <td><input type="checkbox" id="skill_hp_healing_rate_up"><label for="skill_hp_healing_rate_up">HP回復量アップ</label></td>
+          <td><input type="checkbox" id="skill_avoidance"><label for="skill_avoidance">回避</label></td>
+          <td><input type="checkbox" id="skill_invincible"><label for="skill_invincible">無敵</label></td>
+          <td><input type="checkbox" id="skill_guts"><label for="skill_guts">ガッツ</label></td>
+        </tr>
+        <tr hidden class="tr-border-buttom">
+          <td colspan="4"><input type="checkbox" id="skill_target_concentration"><label for="skill_target_concentration">ターゲット集中</label></td>
+        </tr>
+      </table>
+
+      <button type="button" id="btn" class="btn btn-primary btn-search">検索</button>
+
+      <table class="search-result">
+        <colgroup>
+          <col>
+          <col width=200px>
+          <col width=120px>
+          <col>
+          <col>
+          <col>
+          <col width=360px>
+          <col width=360px>
+          <col width=360px>
+          <col width=360px>
+        </colgroup>
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>サーヴァント</th>
+            <th>クラス<br>（レアリティ）</th>
+            <th>HP</th>
+            <th>ATK</th>
+            <th>COST</th>
+            <th>宝具</th>
+            <th>スキル1</th>
+            <th>スキル2</th>
+            <th>スキル3</th>
+          </tr>
+        </thead>
+        <tbody id="search-result-tbody">
+        </tbody>
+      </table>
+    </main>
+    <footer>
+      このサイトは、個人ファンサイトであり、個人のスキルアップの一環で製作しているサイトです。<br>
+      ゲームブランド<a href="http://typemoon.com/" target="_blank">TYPE-MOON</a>、および、Fate/Grand Orderの開発等に関わる企業様とは一切関係ありません。<br>
+      下記は、このサイト独自の内容に関する著作権を示すものです。<br>
+      &copy; 2020 7280ayubihs.
+    </footer>
+
+    <script src="js/fgoss-common.js"></script>
+    <script src="js/fgoss-search.js"></script>
+  </body>
+</html>

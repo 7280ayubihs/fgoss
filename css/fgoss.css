@@ -1,0 +1,107 @@
+body {
+  font-family: "メイリオ", "Meiryo", sans-serif;
+  font-size: 13px;
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid gray;
+}
+
+th {
+  border: 1px solid gray;
+  padding: 4px;
+}
+
+input {
+  position: relative;
+  top: 2px;
+  margin-left: 4px;
+}
+
+label {
+  margin: 0;
+  margin-left: 4px;
+}
+
+footer {
+  font-size: 10px;
+  color: gray;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.site-title {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.search-spec {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.th-base-status {
+  background-color: lightgray;
+}
+
+.th-np-choices {
+  background-color: lightsalmon;
+}
+
+.th-skill-choices {
+  background-color: lightskyblue;
+}
+
+.tr-border-buttom {
+  border-bottom: 1px solid gray;
+}
+
+.btn-search {
+  display: block;
+  width: 100px;
+  /* margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto; */
+  margin: 10px auto 20px;
+}
+
+.search-result {
+  margin-left: 16px;
+  margin-right: -1024px;
+}
+
+.search-result td {
+  border: 1px solid gray;
+  padding: 8px;
+  vertical-align: top;
+}
+
+.search-result th {
+  background-color:lightblue;
+}
+
+.search-result p {
+  margin: 0;
+}
+
+.np-info,
+.skill-info {
+  color: dimgray;
+  font-size: 12px;
+  font-weight: bold;
+  padding-top: 4px;
+}
+
+/* これ、カッコ悪いな・・・ */
+.td-integer {
+  text-align: right;
+}
+
+/* これ、カッコ悪いな・・・ */
+.text-align-center {
+  text-align: center;
+}
