@@ -83,6 +83,186 @@ function filterNpEffect() {
 }
 
 // 
+// 宝具効果（攻撃系）フィルター
+// 
+function filterNpAttack() {
+  if (document.getElementById("np_atk_up").checked) {
+    servantList = servantList.filter(servant => servant.np.details.atk_up == 1);
+  }  
+  if (document.getElementById("np_damage_plus").checked) {
+    servantList = servantList.filter(servant => servant.np.details.damage_plus == 1);
+  }  
+  if (document.getElementById("np_quick_up").checked) {
+    servantList = servantList.filter(servant => servant.np.details.quick_up == 1);
+  }  
+  if (document.getElementById("np_arts_up").checked) {
+    servantList = servantList.filter(servant => servant.np.details.arts_up == 1);
+  }  
+  if (document.getElementById("np_buster_up").checked) {
+    servantList = servantList.filter(servant => servant.np.details.buster_up == 1);
+  }  
+  if (document.getElementById("np_no_power_up").checked) {
+    servantList = servantList.filter(servant => servant.np.details.no_power_up == 1);
+  }  
+  if (document.getElementById("np_critical_power_up").checked) {
+    servantList = servantList.filter(servant => servant.np.details.critical_power_up == 1);
+  }  
+  if (document.getElementById("np_star_generation_rate_up").checked) {
+    servantList = servantList.filter(servant => servant.np.details.star_generation_rate_up == 1);
+  }  
+  if (document.getElementById("np_star_concentration_up").checked) {
+    servantList = servantList.filter(servant => servant.np.details.star_concentration_up == 1);
+  }  
+  if (document.getElementById("np_star_get").checked) {
+    servantList = servantList.filter(servant => servant.np.details.star_get == 1);
+  }  
+  if (document.getElementById("np_star_every_turn_get").checked) {
+    servantList = servantList.filter(servant => servant.np.details.star_every_turn_get == 1);
+  }  
+  if (document.getElementById("np_np_get").checked) {
+    servantList = servantList.filter(servant => servant.np.details.np_get == 1);
+  }  
+  if (document.getElementById("np_np_every_turn_get").checked) {
+    servantList = servantList.filter(servant => servant.np.details.np_every_turn_get == 1);
+  }  
+  if (document.getElementById("np_np_generation_rate_up").checked) {
+    servantList = servantList.filter(servant => servant.np.details.np_generation_rate_up == 1);
+  }  
+  if (document.getElementById("np_hitting_target").checked) {
+    servantList = servantList.filter(servant => servant.np.details.hitting_target == 1);
+  }  
+  if (document.getElementById("np_invincible_penetration").checked) {
+    servantList = servantList.filter(servant => servant.np.details.invincible_penetration == 1);
+  }  
+  if (document.getElementById("np_ignore_def").checked) {
+    servantList = servantList.filter(servant => servant.np.details.ignore_def == 1);
+  }  
+}
+
+// 
+// 宝具効果（防御系）フィルター
+// 
+function filterNpDefensive() {
+  if (document.getElementById("np_def_up").checked) {
+    servantList = servantList.filter(servant => servant.np.details.def_up == 1);
+  }  
+  if (document.getElementById("np_damage_cut").checked) {
+    servantList = servantList.filter(servant => servant.np.details.damage_cut == 1);
+  }  
+  if (document.getElementById("np_hp_heal").checked) {
+    servantList = servantList.filter(servant => servant.np.details.hp_heal == 1);
+  }  
+  if (document.getElementById("np_hp_every_turn_heal").checked) {
+    servantList = servantList.filter(servant => servant.np.details.hp_every_turn_heal == 1);
+  }  
+  if (document.getElementById("np_hp_healing_rate_up").checked) {
+    servantList = servantList.filter(servant => servant.np.details.hp_healing_rate_up == 1);
+  }  
+  if (document.getElementById("np_avoidance").checked) {
+    servantList = servantList.filter(servant => servant.np.details.avoidance == 1);
+  }  
+  if (document.getElementById("np_invincible").checked) {
+    servantList = servantList.filter(servant => servant.np.details.invincible == 1);
+  }  
+  if (document.getElementById("np_guts").checked) {
+    servantList = servantList.filter(servant => servant.np.details.guts == 1);
+  }  
+  if (document.getElementById("np_target_concentration").checked) {
+    servantList = servantList.filter(servant => servant.np.details.target_concentration == 1);
+  }  
+}
+
+// 
+// スキル効果（攻撃系）フィルター
+// 
+function filterSkillAttack() {
+  if (document.getElementById("skill_atk_up").checked) {
+    servantList = servantList.filter(servant => servant.skills.details.atk_up == 1);
+  }  
+  if (document.getElementById("skill_damage_plus").checked) {
+    servantList = servantList.filter(servant => servant.skills.details.damage_plus == 1);
+  }  
+  if (document.getElementById("skill_quick_up").checked) {
+    servantList = servantList.filter(servant => servant.skills.details.quick_up == 1);
+  }  
+  if (document.getElementById("skill_arts_up").checked) {
+    servantList = servantList.filter(servant => servant.skills.details.arts_up == 1);
+  }  
+  if (document.getElementById("skill_buster_up").checked) {
+    servantList = servantList.filter(servant => servant.skills.details.buster_up == 1);
+  }  
+  if (document.getElementById("skill_no_power_up").checked) {
+    servantList = servantList.filter(servant => servant.skills.details.no_power_up == 1);
+  }  
+  if (document.getElementById("skill_critical_power_up").checked) {
+    servantList = servantList.filter(servant => servant.skills.details.critical_power_up == 1);
+  }  
+  if (document.getElementById("skill_star_generation_rate_up").checked) {
+    servantList = servantList.filter(servant => servant.skills.details.star_generation_rate_up == 1);
+  }  
+  if (document.getElementById("skill_star_concentration_up").checked) {
+    servantList = servantList.filter(servant => servant.skills.details.star_concentration_up == 1);
+  }  
+  if (document.getElementById("skill_star_get").checked) {
+    servantList = servantList.filter(servant => servant.skills.details.star_get == 1);
+  }  
+  if (document.getElementById("skill_star_every_turn_get").checked) {
+    servantList = servantList.filter(servant => servant.skills.details.star_every_turn_get == 1);
+  }  
+  if (document.getElementById("skill_np_get").checked) {
+    servantList = servantList.filter(servant => servant.skills.details.np_get == 1);
+  }  
+  if (document.getElementById("skill_np_every_turn_get").checked) {
+    servantList = servantList.filter(servant => servant.skills.details.np_every_turn_get == 1);
+  }  
+  if (document.getElementById("skill_np_generation_rate_up").checked) {
+    servantList = servantList.filter(servant => servant.skills.details.np_generation_rate_up == 1);
+  }  
+  if (document.getElementById("skill_hitting_target").checked) {
+    servantList = servantList.filter(servant => servant.skills.details.hitting_target == 1);
+  }  
+  if (document.getElementById("skill_invincible_penetration").checked) {
+    servantList = servantList.filter(servant => servant.skills.details.invincible_penetration == 1);
+  }  
+  if (document.getElementById("skill_ignore_def").checked) {
+    servantList = servantList.filter(servant => servant.skills.details.ignore_def == 1);
+  }  
+}
+
+// 
+// スキル効果（防御系）フィルター
+// 
+function filterSkillDefensive() {
+  if (document.getElementById("skill_def_up").checked) {
+    servantList = servantList.filter(servant => servant.skills.details.def_up == 1);
+  }  
+  if (document.getElementById("skill_damage_cut").checked) {
+    servantList = servantList.filter(servant => servant.skills.details.damage_cut == 1);
+  }  
+  if (document.getElementById("skill_hp_heal").checked) {
+    servantList = servantList.filter(servant => servant.skills.details.hp_heal == 1);
+  }  
+  if (document.getElementById("skill_hp_every_turn_heal").checked) {
+    servantList = servantList.filter(servant => servant.skills.details.hp_every_turn_heal == 1);
+  }  
+  if (document.getElementById("skill_hp_healing_rate_up").checked) {
+    servantList = servantList.filter(servant => servant.skills.details.hp_healing_rate_up == 1);
+  }  
+  if (document.getElementById("skill_avoidance").checked) {
+    servantList = servantList.filter(servant => servant.skills.details.avoidance == 1);
+  }  
+  if (document.getElementById("skill_invincible").checked) {
+    servantList = servantList.filter(servant => servant.skills.details.invincible == 1);
+  }  
+  if (document.getElementById("skill_guts").checked) {
+    servantList = servantList.filter(servant => servant.skills.details.guts == 1);
+  }  
+  if (document.getElementById("skill_target_concentration").checked) {
+    servantList = servantList.filter(servant => servant.skills.details.target_concentration == 1);
+  }  
+}
+
+// 
 // 検索結果表のアップデート関数
 // 
 function updateSearchResult() {
@@ -198,6 +378,18 @@ document.getElementById("btn").addEventListener("click", () => {
   console.info(servantList.length);
   
   filterNpEffect();
+  console.info(servantList.length);
+  
+  filterNpAttack();
+  console.info(servantList.length);
+  
+  filterNpDefensive();
+  console.info(servantList.length);
+  
+  filterSkillAttack();
+  console.info(servantList.length);
+  
+  filterSkillDefensive();
   console.info(servantList.length);
 
   updateSearchResult();
