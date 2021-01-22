@@ -20,7 +20,6 @@ input {
 }
 
 label {
-  margin: 0;
   margin-left: 4px;
 }
 
@@ -67,6 +66,17 @@ footer {
   margin-left: auto;
   margin-right: auto; */
   margin: 10px auto 20px;
+}
+
+.search-result-summary {
+  display: block;
+  font-weight: bold;
+  margin-left: 24px;
+  margin-bottom: 8px;
+}
+
+.search-result-number {
+  color: red;
 }
 
 .search-result {

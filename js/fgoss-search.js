@@ -357,6 +357,9 @@ function updateSearchResult() {
     
     tbody.appendChild(tr);
   });
+
+  // 該当サーヴァント件数を更新
+  document.getElementById("search-result-number").innerText = servantList.length;
 }
 
 // 

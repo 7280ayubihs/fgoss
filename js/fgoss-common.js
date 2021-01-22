@@ -196,3 +196,5 @@ servants.forEach(servant => {
   
   tbody.appendChild(tr);
 });
+
+document.getElementById("search-result-number").innerText = servants.length;
