@@ -2,7 +2,8 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/fgoss.css">
+    <link rel="stylesheet" href="css/fgoss-common.css">
+    <link rel="stylesheet" href="css/fgoss-index.css">
     <title>FGOサーヴァント検索</title>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -23,7 +24,10 @@
         サーヴァントスペック検索
       </p>
       <div class="header-menu">
+        <a>トップページ</a>
         <a href="about.html">このサイトについて</a>
+        <a href="setting.html">所持サーヴァント登録</a>
+        <br>
         <a href="https://github.com/7280ayubihs/fgoss" target="_blank" rel="noopener noreferrer">ソースコードはこちら</a>
       </div>
     </header>
@@ -168,6 +172,10 @@
         </tr>
         <tr class="tr-border-buttom">
           <td colspan="4"><input type="checkbox" id="skill_target_concentration"><label for="skill_target_concentration">ターゲット集中</label></td>
+        </tr>
+        <tr class="tr-border-buttom">
+          <th class="th-another">その他</th>
+          <td colspan="4"><input type="checkbox" id="show_only_poss_servants"><label for="show_only_poss_servants">所持サーヴァントのみを表示</label></td>
         </tr>
       </table>
 

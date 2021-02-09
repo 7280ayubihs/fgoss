@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/fgoss-common.css">
+    <link rel="stylesheet" href="css/fgoss-setting.css">
+    <title>所持サーヴァント登録｜FGOサーヴァント検索</title>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-W6G3QQN');</script>
+    <!-- End Google Tag Manager -->
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W6G3QQN"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header>
+      <p class="site-title">
+        Fate/Grand Order<br>
+        サーヴァントスペック検索<br>
+        所持サーヴァント登録ページ
+      </p>
+      <div class="header-menu">
+        <a href="index.html">トップページ</a>
+        <a href="about.html">このサイトについて</a>
+        <a">所持サーヴァント登録</a>
+        <br>
+        <a href="https://github.com/7280ayubihs/fgoss" target="_blank" rel="noopener noreferrer">ソースコードはこちら</a>
+      </div>
+    </header>
+
+    <main>
+      <table>
+        <colgroup>
+          <col width="400px">
+          <col width="400px">
+          <col width="400px">
+          <col width="400px">
+          <col width="400px">
+        </colgroup>
+        <tr><th><h2>セイバー</h2></th></tr>
+        <tr>
+          <td><h3>★５（ＳＳＲ）</h3><table id="saber5"></table></td>
+          <td><h3>★４（ＳＲ）</h3><table id="saber4"></table></td>
+          <td><h3>★３（Ｒ）</h3><table id="saber3"></table></td>
+          <td><h3>★２（ＵＣ）</h3><table id="saber2"></table></td>
+          <td><h3>★１（Ｃ）</h3><table id="saber1"></table></td>
+        </tr>
+        <tr><th><h2>アーチャー</h2></th></tr>
+        <tr>
+          <td><h3>★５（ＳＳＲ）</h3><table id="archer5"></table></td>
+          <td><h3>★４（ＳＲ）</h3><table id="archer4"></table></td>
+          <td><h3>★３（Ｒ）</h3><table id="archer3"></table></td>
+          <td><h3>★２（ＵＣ）</h3><table id="archer2"></table></td>
+          <td><h3>★１（Ｃ）</h3><table id="archer1"></table></td>
+        </tr>
+        <tr><th><h2>ランサー</h2></th></tr>
+        <tr>
+          <td><h3>★５（ＳＳＲ）</h3><table id="lancer5"></table></td>
+          <td><h3>★４（ＳＲ）</h3><table id="lancer4"></table></td>
+          <td><h3>★３（Ｒ）</h3><table id="lancer3"></table></td>
+          <td><h3>★２（ＵＣ）</h3><table id="lancer2"></table></td>
+          <td><h3>★１（Ｃ）</h3><table id="lancer1"></table></td>
+        </tr>
+        <tr><th><h2>ライダー</h2></th></tr>
+        <tr>
+          <td><h3>★５（ＳＳＲ）</h3><table id="rider5"></table></td>
+          <td><h3>★４（ＳＲ）</h3><table id="rider4"></table></td>
+          <td><h3>★３（Ｒ）</h3><table id="rider3"></table></td>
+          <td><h3>★２（ＵＣ）</h3><table id="rider2"></table></td>
+          <td><h3>★１（Ｃ）</h3><table id="rider1"></table></td>
+        </tr>
+        <tr><th><h2>キャスター</h2></th></tr>
+        <tr>
+          <td><h3>★５（ＳＳＲ）</h3><table id="caster5"></table></td>
+          <td><h3>★４（ＳＲ）</h3><table id="caster4"></table></td>
+          <td><h3>★３（Ｒ）</h3><table id="caster3"></table></td>
+          <td><h3>★２（ＵＣ）</h3><table id="caster2"></table></td>
+          <td><h3>★１（Ｃ）</h3><table id="caster1"></table></td>
+        </tr>
+        <tr><th><h2>アサシン</h2></th></tr>
+        <tr>
+          <td><h3>★５（ＳＳＲ）</h3><table id="assassin5"></table></td>
+          <td><h3>★４（ＳＲ）</h3><table id="assassin4"></table></td>
+          <td><h3>★３（Ｒ）</h3><table id="assassin3"></table></td>
+          <td><h3>★２（ＵＣ）</h3><table id="assassin2"></table></td>
+          <td><h3>★１（Ｃ）</h3><table id="assassin1"></table></td>
+        </tr>
+        <tr><th><h2>バーサーカー</h2></th></tr>
+        <tr>
+          <td><h3>★５（ＳＳＲ）</h3><table id="berserker5"></table></td>
+          <td><h3>★４（ＳＲ）</h3><table id="berserker4"></table></td>
+          <td><h3>★３（Ｒ）</h3><table id="berserker3"></table></td>
+          <td><h3>★２（ＵＣ）</h3><table id="berserker2"></table></td>
+          <td><h3>★１（Ｃ）</h3><table id="berserker1"></table></td>
+        </tr>
+        <tr><th><h2>ルーラー</h2></th></tr>
+        <tr>
+          <td><h3>★５（ＳＳＲ）</h3><table id="ruler5"></table></td>
+          <td><h3>★４（ＳＲ）</h3><table id="ruler4"></table></td>
+          <td><h3>★３（Ｒ）</h3><table id="ruler3"></table></td>
+          <td><h3>★２（ＵＣ）</h3><table id="ruler2"></table></td>
+          <td><h3>★１（Ｃ）</h3><table id="ruler1"></table></td>
+        </tr>
+        <tr><th><h2>アヴェンジャー</h2></th></tr>
+        <tr>
+          <td><h3>★５（ＳＳＲ）</h3><table id="avenger5"></table></td>
+          <td><h3>★４（ＳＲ）</h3><table id="avenger4"></table></td>
+          <td><h3>★３（Ｒ）</h3><table id="avenger3"></table></td>
+          <td><h3>★２（ＵＣ）</h3><table id="avenger2"></table></td>
+          <td><h3>★１（Ｃ）</h3><table id="avenger1"></table></td>
+        </tr>
+        <tr><th><h2>アルターエゴ</h2></th></tr>
+        <tr>
+          <td><h3>★５（ＳＳＲ）</h3><table id="alter_ego5"></table></td>
+          <td><h3>★４（ＳＲ）</h3><table id="alter_ego4"></table></td>
+          <td><h3>★３（Ｒ）</h3><table id="alter_ego3"></table></td>
+          <td><h3>★２（ＵＣ）</h3><table id="alter_ego2"></table></td>
+          <td><h3>★１（Ｃ）</h3><table id="alter_ego1"></table></td>
+        </tr>
+        <tr><th><h2>ムーンキャンサー</h2></th></tr>
+        <tr>
+          <td><h3>★５（ＳＳＲ）</h3><table id="moon_cancer5"></table></td>
+          <td><h3>★４（ＳＲ）</h3><table id="moon_cancer4"></table></td>
+          <td><h3>★３（Ｒ）</h3><table id="moon_cancer3"></table></td>
+          <td><h3>★２（ＵＣ）</h3><table id="moon_cancer2"></table></td>
+          <td><h3>★１（Ｃ）</h3><table id="moon_cancer1"></table></td>
+        </tr>
+        <tr><th><h2>フォーリナー</h2></th></tr>
+        <tr>
+          <td><h3>★５（ＳＳＲ）</h3><table id="foreigner5"></table></td>
+          <td><h3>★４（ＳＲ）</h3><table id="foreigner4"></table></td>
+          <td><h3>★３（Ｒ）</h3><table id="foreigner3"></table></td>
+          <td><h3>★２（ＵＣ）</h3><table id="foreigner2"></table></td>
+          <td><h3>★１（Ｃ）</h3><table id="foreigner1"></table></td>
+        </tr>
+      </table>
+        
+      <button id="resist">所持サーヴァントを登録</button>
+    </main>
+    
+    <footer>
+      このサイトは、個人ファンサイトであり、個人のスキルアップの一環で製作しているサイトです。<br>
+      ゲームブランド<a href="http://typemoon.com/" target="_blank">TYPE-MOON</a>、および、Fate/Grand Orderの開発等に関わる企業様とは一切関係ありません。<br>
+      下記は、このサイト独自の内容に関する著作権を示すものです。<br>
+      &copy; 2020 7280ayubihs.
+    </footer>
+
+    <script src="js/define-class.js"></script>
+    <script src="js/initialize-json.js"></script>
+    <script src="js/setting.js"></script>
+  </body>
+</html>

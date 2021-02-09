@@ -1,0 +1,12 @@
+th {
+  text-align: left;
+}
+
+td {
+  vertical-align: top;
+}
+
+button {
+  display: block;
+  margin: 10px auto 10px;
+}
