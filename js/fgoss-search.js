@@ -263,6 +263,22 @@ function filterSkillDefensive() {
 }
 
 // 
+// 所持サーヴァントフィルター
+// 
+function filterOwnedServant() {
+  if (document.getElementById("show_only_poss_servants").checked) {
+    // fgoss-common.js 等へ統合予定
+    const OSNL_LS_KEY = "OwnedServantNoList";
+    // 所持サーヴァントのNoリスト
+    const ownedServantNumberList = JSON.parse(localStorage.getItem(OSNL_LS_KEY));
+    // 所持サーヴァントのNoリストに含まれているデータを抽出する。
+    servantList = servantList.filter(servant => {
+      return ownedServantNumberList.indexOf(servant.status.no) != -1;
+    });
+  }
+}
+
+// 
 // 検索結果表のアップデート関数
 // 
 function updateSearchResult() {
@@ -393,6 +409,9 @@ document.getElementById("btn").addEventListener("click", () => {
   console.info(servantList.length);
   
   filterSkillDefensive();
+  console.info(servantList.length);
+  
+  filterOwnedServant();
   console.info(servantList.length);
 
   updateSearchResult();
