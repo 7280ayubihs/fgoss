@@ -3283,8 +3283,8 @@
 		"skill":{
 			"name1":"抑制A",
 			"info1":"自身のスター集中度をアップ(3ターン)&スターを大量獲得[Lv]",
-			"name2":"プランニングB",
-			"info2":"自身のスター発生率をアップ[Lv](3ターン)",
+			"name2":"十歩殺一人B+",
+			"info2":"自身に〔王〕特攻状態を付与[Lv](3ターン)&「Quick攻撃時に敵単体の防御力をダウン(3ターン)する状態」を付与(5回・3ターン)&スター発生率をアップ[Lv](3ターン)",
 			"name3":"傍若無人A",
 			"info3":"自身のQuickカード性能をアップ[Lv](1ターン)&クリティカル威力をアップ[Lv](1ターン)",
 			"details":{
@@ -7312,8 +7312,8 @@
 		"skill":{
 			"name1":"長き旅路への祈りA",
 			"info1":"味方単体に毎ターンスター獲得状態を付与[Lv](3ターン)&NP獲得量をアップ[Lv](3ターン)",
-			"name2":"洗礼詠唱B+",
-			"info2":"敵単体〔死霊と悪魔〕のチャージを減らす+自身のNPを毎ターン増やす[Lv](5ターン)",
+			"name2":"熾天の杯EX",
+			"info2":"敵単体のチャージを減らす+敵全体のBuster攻撃耐性をダウン[Lv](5ターン)+自身のNPを増やす&NPを毎ターン増やす[Lv](5ターン)",
 			"name3":"神明裁決（偽）C++",
 			"info3":"敵単体〔サーヴァント〕を確率で行動不能状態にする[Lv](1ターン)+自身のBusterカード性能をアップ[Lv](3ターン)",
 			"details":{
@@ -7328,7 +7328,7 @@
 				"star_concentration_up":0,
 				"star_get":0,
 				"star_every_turn_get":1,
-				"np_get":0,
+				"np_get":1,
 				"np_every_turn_get":0,
 				"np_generation_rate_up":1,
 				"hitting_target":0,
@@ -9998,15 +9998,15 @@
 		"skill":{
 			"name1":"天賦の叡智EX",
 			"info1":"自身に確率で防御力をアップ[Lv](3ターン)&確率で宝具威力をアップ[Lv](3ターン)&ガッツ状態(1回・3ターン)を付与[Lv]",
-			"name2":"黄金律（体）B",
-			"info2":"自身に弱体無効状態を付与(2ターン)&毎ターンHP回復状態を付与[Lv](3ターン)&NPを毎ターン増やす(3ターン)",
+			"name2":"モナ・リザA+",
+			"info2":"自身に弱体無効状態を付与(2ターン)&毎ターンHP回復状態を付与[Lv](3ターン)&NPを毎ターン増やす(3ターン)+味方全体のArtsカード性能をアップ[Lv](3ターン)",
 			"name3":"星の開拓者EX",
 			"info3":"自身のNPを増やす[Lv]&無敵貫通状態を付与(3ターン)+スターを獲得",
 			"details":{
 				"atk_up":0,
 				"damage_plus":0,
 				"quick_up":0,
-				"arts_up":0,
+				"arts_up":1,
 				"buster_up":0,
 				"no_power_up":1,
 				"critical_power_up":0,
@@ -12603,8 +12603,8 @@
 			}
 		},
 		"skill":{
-			"name1":"魔力放出A",
-			"info1":"自身のBusterカード性能をアップ[Lv](1ターン)",
+			"name1":"赤き竜の徴A",
+			"info1":"自身のBusterカード性能をアップ[Lv](3ターン)&NP獲得量をアップ[Lv](3ターン）",
 			"name2":"眩き旅路EX",
 			"info2":"スターを大量獲得[Lv]+自身のクリティカル威力をアップ[Lv](3ターン)",
 			"name3":"巨獣狩りA",
@@ -12623,7 +12623,7 @@
 				"star_every_turn_get":0,
 				"np_get":1,
 				"np_every_turn_get":0,
-				"np_generation_rate_up":0,
+				"np_generation_rate_up":1,
 				"hitting_target":0,
 				"invincible_penetration":0,
 				"ignore_def":0,
